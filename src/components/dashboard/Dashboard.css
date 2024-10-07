@@ -152,5 +152,11 @@
   
 }
 
+.profile-post-link {
+  text-decoration: none;
+  cursor: default;
+}
+
+
 
 

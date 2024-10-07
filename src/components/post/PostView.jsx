@@ -14,8 +14,7 @@ export function PostView(){
     if(!posts) {
         return "Loading...";
     }
-    console.log(id);
-    console.log(posts);
+   
     const post = posts.find((c) => c.id === parseInt(id));
     if (!post) {
         return "Loading..";
@@ -23,7 +22,8 @@ export function PostView(){
     
 
     return(
-        <Card className="post-card post-card-single">
+        <Container fluid className="d-flex flex-column p-4">
+            <Card className="post-card post-card-single">
                 <Container className="post-separator m-0 p-0">
                     <Row className="align-items-center p-0 m-0 ">
                         <PostAuthorSection post={post}/>
@@ -36,5 +36,7 @@ export function PostView(){
                     <CommentSection post={post}/>
                 </Container>
             </Card>
+        </Container>
+        
     )
 }

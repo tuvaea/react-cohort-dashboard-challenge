@@ -7,6 +7,7 @@ import { SideBar } from './components/sidebar/SideBar';
 import { createContext, useEffect, useState } from 'react';
 import { Dashboard } from './components/dashboard/Dashboard';
 import { ProfileView } from './components/profile-page/ProfileView';
+import { PostView } from './components/post/PostView';
 
 const ContactContext = createContext();
 
@@ -46,7 +47,7 @@ function App() {
 
   useEffect(() => {
     if (contacts.length > 0) {
-      setSignedInUser(contacts[0]);
+      setSignedInUser(contacts[2]);
     }
   }, [contacts]); 
  
@@ -61,7 +62,8 @@ function App() {
           setPosts, 
           signedInUser, 
           setSignedInUser,
-          fetchPosts}}>
+          fetchPosts,
+          fetchContacts}}>
         <Container fluid className="d-flex flex-column vh-100 p-0">
           <Header/>
           <Row className="flex-grow-1 m-0">
@@ -71,6 +73,8 @@ function App() {
                 <Routes>
                   <Route path='/' element={<Dashboard />}/>
                   <Route path='/account/:id' element={<ProfileView />}/>
+                  <Route path='/post/:id' element={<PostView />}/>
+
                 </Routes>
             
             </Col>

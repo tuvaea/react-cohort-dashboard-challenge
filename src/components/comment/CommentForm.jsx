@@ -1,18 +1,16 @@
 import { useContext,  useEffect,  useState } from "react";
-import { Card, Col, Row } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 import { ContactContext } from "../../App";
 import { ProfileIcon } from "../header/ProfileIcon";
 import '../dashboard/Dashboard.css'
 import PropTypes from "prop-types";
 import Send from '../../../_assets/send.svg';
-import { useNavigate } from "react-router-dom";
 
 
 
 export function CommentForm({post}) {
     
     const { signedInUser, fetchPosts } = useContext(ContactContext); 
-    const navigate = useNavigate();
 
     const initialFormData = {
         postId: post.id,
@@ -46,12 +44,7 @@ export function CommentForm({post}) {
         body: JSON.stringify(formData)
 
         })
-        .then(() => {
-            navigate("/");
-        })
-        .catch((err) => {
-            console.error("Error: ", err)
-        })
+        
         
         await fetchPosts();
         setFormData(initialFormData);

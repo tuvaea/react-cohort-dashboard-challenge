@@ -1,8 +1,3 @@
-
-
-// Fetch comments per post
-//Pass to commentlist
-//Then map and pass to commentlistitem
 import PropTypes from "prop-types";
 import { useEffect, useState } from "react";
 import { Container, Row } from "react-bootstrap";
@@ -11,6 +6,7 @@ import { CommentForm } from "./CommentForm";
 
 export function CommentSection({post}) {
     const [comments, setComments] = useState([]);
+    const [showAllComments, setShowAllComments] = useState(false);
 
     const fetchComments = async () => {
         const response = await fetch(
@@ -23,14 +19,30 @@ export function CommentSection({post}) {
     
       useEffect(() => {
         fetchComments();
-      }, []);
+      }, [comments]);
 
+    const handleToggleComments = () => {
+      setShowAllComments((prev) => !prev);
+    };
+  
+    const commentsToDisplay = showAllComments ? comments : comments.slice(0, 3);
 
     return (
         <Container className="p-0 m-0">
+            
             <Row className="p-0 m-0">
-                <CommentsList comments={comments}/>
+              <CommentsList comments={commentsToDisplay} />
             </Row>
+            {comments.length > 3 && (
+              <Row className="p-0 m-0">
+                <p
+                  onClick={handleToggleComments}
+                  style={{ cursor: "pointer", fontWeight: "bold", marginTop: "1em" }}
+                >
+                  {showAllComments ? "Show fewer comments" : "Show all comments"}
+                </p>
+              </Row>
+            )}
             <Row className="p-0 m-0">
                 <CommentForm post={post}/>
             </Row>

@@ -4,6 +4,7 @@ import { useContext } from "react";
 import { ContactContext } from "../../App";
 import PropTypes from "prop-types";
 import { ProfileIcon } from "../header/ProfileIcon";
+import { Link } from "react-router-dom";
 
 
 
@@ -33,11 +34,11 @@ export function CommentListItem({comment}) {
                 </Col>
                 <Col xs="auto">
                     <Card className="comment-card">
-                    <h3 className="mb-1 comment-author-name">{currentContact.firstName} {currentContact.lastName}</h3>
+                    <Link to={`/account/${currentContact.id}`} className="profile-link">
+                        <h3 className="mb-1 comment-author-name">{currentContact.firstName} {currentContact.lastName}</h3>
+                    </Link>
                     <p className="mb-0 post-content">{comment.content}</p>
-                    {/* author + commentcontent */}
                     </Card>
-                    
                 </Col>
             </Row>
 

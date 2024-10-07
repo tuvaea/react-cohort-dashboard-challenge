@@ -5,7 +5,6 @@ import './ProfileView.css'
 
 
 export function AboutForm({ formData, handleChange }) {
-    console.log(formData);
     
     return (
         <Form>

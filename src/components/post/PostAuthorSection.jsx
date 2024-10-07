@@ -5,6 +5,7 @@ import '../dashboard/Dashboard.css'
 import { ProfileIcon } from "../header/ProfileIcon";
 import { useContext } from "react";
 import { ContactContext } from "../../App";
+import { Link } from "react-router-dom";
 
 
 
@@ -25,7 +26,9 @@ export function PostAuthorSection ({post}) {
                 <ProfileIcon contactId={post.contactId}/>
             </Col>
             <Col xs="auto" className="p-0">
-                <h3 className="mb-1 post-author-name">{currentContact.firstName} {currentContact.lastName}</h3>
+                <Link to={`/account/${currentContact.id}`} className="profile-link">
+                    <h3 className="mb-1 post-author-name">{currentContact.firstName} {currentContact.lastName}</h3>
+                </Link>
                 <p className="mb-0 post-author-title">{currentContact.jobTitle}</p>
             </Col>
         </Row>        
