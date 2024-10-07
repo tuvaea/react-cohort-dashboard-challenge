@@ -1,0 +1,156 @@
+.ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.post-card {
+    padding: 2em;
+    margin-top: 1em;
+    border: 1px solid #e6e6e6;
+}
+
+.post-card-single {
+  margin: 3em;
+  margin-bottom: 6em;
+  margin-top: 2.5em;
+}
+
+  
+  .post-separator {
+    border-bottom: 1px solid #d4d4d4;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+  }
+
+  .post-author-name {
+    font-family: 'Trebuchet MS', sans-serif; /* Use Arial or any similar sans-serif font */
+    font-size: 1.4rem; /* Slightly larger text */
+    font-weight: 700;   /* Bold text */
+    color: #26265e;     /* Dark blue or similar */
+  }
+  
+  .post-author-title {
+    font-family: 'Trebuchet MS', sans-serif; /* Same font family for consistency */
+    font-size: 0.9rem;   /* Normal size for the job title */
+    font-weight: 600;  /* Semi-bold or medium weight */
+    color: #666;       /* Light grey for a subtle contrast */
+  }
+
+  .post-content {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 1.1rem; /* Slightly larger text */
+    font-weight: bold; 
+    color: #343468ef;
+    padding: 0;
+    margin: 0;
+  }
+
+  .post-profile-icon {
+    padding-left: 0.6em;
+    padding-right: 0.6em;
+  }
+
+  .comment-author-name {
+    font-family: 'Trebuchet MS', sans-serif; /* Use Arial or any similar sans-serif font */
+    font-size: 1.15rem; /* Slightly larger text */
+    font-weight: bolder;   /* Bold text */
+    color: #26265e;     /* Dark blue or similar */
+  }
+
+  .comment-item {
+    margin-top: 1em;
+  }
+
+  .comment-card {
+    padding: 1.3em;
+    background-color: #e6ebf5;
+    border: 0;
+
+  }
+
+  .post-form-card {
+    padding: 1.4em;
+    border: 1px solid #e6e6e6;
+  }
+
+  .post-form {
+    border: none;
+    background-color: #e6ebf5;
+    height: 3rem; /* Matches ProfileIcon size */
+    font-size: 1rem; /* Adjust text size to fit */
+    padding-left: 1rem;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 1.1rem; /* Slightly larger text */
+    font-weight: bold;
+      /* Optional: Add padding for better aesthetics */
+  }
+
+  .post-form::placeholder {
+    color: #0000007a;
+    opacity: 1;  
+}
+  
+  .custom-post-button {
+    height: 3rem;
+    width: 15rem;
+    font-size: 1rem;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    background-color: #000046;
+    color: #fff; 
+    border: none; 
+    cursor: pointer;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 1.1rem; 
+    font-weight: bold;  
+}
+
+.custom-post-button:hover {
+  background-color: #000046; /* Darker shade on hover */
+  color: #fff; /* Keep text white */
+  border: 1px solid #e6e6e6;
+}
+ 
+
+.submit-button-comment {
+  right: 0;
+  top : 5px;
+  background-color: #e6ebf5;
+  color: #fff;
+  border-top-left-radius: 0; /* No rounding on right side */
+  border-bottom-left-radius: 0;
+}
+
+.submit-button-comment:hover {
+  background-color: #e6ebf5;
+  color: #ffff;
+}
+
+
+.comment-form-margin {
+  margin-top: 1em;
+}
+
+.comment-form {
+  border: none;
+    background-color: #e6ebf5;
+    height: 3rem; /* Matches ProfileIcon size */
+    font-size: 1rem; /* Adjust text size to fit */
+    padding-left: 1rem;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 1.1rem; /* Slightly larger text */
+    font-weight: bold;
+    border-top-right-radius: 0; /* No rounding on right side */
+  border-bottom-right-radius: 0;
+}
+
+.send-button-style {
+  height: 30px;
+  
+}
+
+
+
