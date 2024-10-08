@@ -4,7 +4,7 @@ import { ContactContext } from "../../App";
 import { ProfileIcon } from "../header/ProfileIcon";
 import '../dashboard/Dashboard.css'
 import PropTypes from "prop-types";
-import Send from '../../../_assets/send.svg';
+import Send from '../../../_assets/send2.svg';
 
 
 
@@ -25,7 +25,7 @@ export function CommentForm({post}) {
         if (signedInUser) {
           setFormData((prev) => ({
             ...prev,
-            contactId: signedInUser.id, // Set the signedInUser in formData
+            contactId: signedInUser.id, 
           }));
         }
       }, [signedInUser]);
@@ -48,8 +48,6 @@ export function CommentForm({post}) {
         
         await fetchPosts();
         setFormData(initialFormData);
-        
-        
     }
 
   

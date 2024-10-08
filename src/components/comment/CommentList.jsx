@@ -7,12 +7,12 @@ import PropTypes from "prop-types";
 
 
 
-export function CommentsList({comments}) {
+export function CommentsList({comments, fetchComments}) {
 
     return(
         <ul className="ul">
-            {comments.map(( comment, index ) => (
-                <CommentListItem  key={index} comment={comment} />
+            {comments.map(( comment ) => (
+                <CommentListItem  key={comment.id} comment={comment} fetchComments={fetchComments} />
             ))}
         </ul>
     )
@@ -21,4 +21,5 @@ export function CommentsList({comments}) {
 
 CommentsList.propTypes = {
     comments: PropTypes.array.isRequired,
+    fetchComments: PropTypes.func.isRequired,
   };

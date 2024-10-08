@@ -1,4 +1,4 @@
-import { Col, Form, Row } from "react-bootstrap";
+import { Form } from "react-bootstrap";
 import PropTypes from "prop-types";
 import '../dashboard/Dashboard.css'
 import './ProfileView.css'

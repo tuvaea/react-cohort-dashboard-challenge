@@ -4,7 +4,7 @@
 import { Card, Col, Container, Row } from "react-bootstrap";
 import { AccountForm } from "./AccountForm";
 import { useContext, useEffect, useState } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { ContactContext } from "../../App";
 import { AboutForm } from "./AboutForm";
 import { ProfileIcon } from "../header/ProfileIcon";
@@ -13,7 +13,6 @@ import { ProfileIcon } from "../header/ProfileIcon";
 
 export function ProfileView (){
 
-    const navigate = useNavigate();
     const {contacts, fetchContacts} = useContext(ContactContext);
     const {id} = useParams();
 
@@ -30,7 +29,6 @@ export function ProfileView (){
         favouriteColour: ""
     });
 
-    // Update formData when account changes
     useEffect(() => {
         if (account) {
             setFormData({

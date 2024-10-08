@@ -24,22 +24,22 @@
   }
 
   .post-author-name {
-    font-family: 'Trebuchet MS', sans-serif; /* Use Arial or any similar sans-serif font */
-    font-size: 1.4rem; /* Slightly larger text */
-    font-weight: 700;   /* Bold text */
-    color: #26265e;     /* Dark blue or similar */
+    font-family: 'Trebuchet MS', sans-serif; 
+    font-size: 1.4rem; 
+    font-weight: 700;   
+    color: #26265e;   
   }
   
   .post-author-title {
-    font-family: 'Trebuchet MS', sans-serif; /* Same font family for consistency */
-    font-size: 0.9rem;   /* Normal size for the job title */
-    font-weight: 600;  /* Semi-bold or medium weight */
-    color: #666;       /* Light grey for a subtle contrast */
+    font-family: 'Trebuchet MS', sans-serif; 
+    font-size: 0.9rem;   
+    font-weight: 600;  
+    color: #666;      
   }
 
   .post-content {
     font-family: 'Trebuchet MS', sans-serif;
-    font-size: 1.1rem; /* Slightly larger text */
+    font-size: 1.1rem; 
     font-weight: bold; 
     color: #343468ef;
     padding: 0;
@@ -52,10 +52,10 @@
   }
 
   .comment-author-name {
-    font-family: 'Trebuchet MS', sans-serif; /* Use Arial or any similar sans-serif font */
-    font-size: 1.15rem; /* Slightly larger text */
-    font-weight: bolder;   /* Bold text */
-    color: #26265e;     /* Dark blue or similar */
+    font-family: 'Trebuchet MS', sans-serif; 
+    font-size: 1.15rem; 
+    font-weight: bolder;   
+    color: #26265e;    
   }
 
   .comment-item {
@@ -77,13 +77,13 @@
   .post-form {
     border: none;
     background-color: #e6ebf5;
-    height: 3rem; /* Matches ProfileIcon size */
-    font-size: 1rem; /* Adjust text size to fit */
+    height: 3rem; 
+    font-size: 1rem; 
     padding-left: 1rem;
     font-family: 'Trebuchet MS', sans-serif;
-    font-size: 1.1rem; /* Slightly larger text */
+    font-size: 1.1rem; 
     font-weight: bold;
-      /* Optional: Add padding for better aesthetics */
+      
   }
 
   .post-form::placeholder {
@@ -109,8 +109,8 @@
 }
 
 .custom-post-button:hover {
-  background-color: #000046; /* Darker shade on hover */
-  color: #fff; /* Keep text white */
+  background-color: #000046; 
+  color: #fff; 
   border: 1px solid #e6e6e6;
 }
  
@@ -120,7 +120,7 @@
   top : 5px;
   background-color: #e6ebf5;
   color: #fff;
-  border-top-left-radius: 0; /* No rounding on right side */
+  border-top-left-radius: 0; 
   border-bottom-left-radius: 0;
 }
 
@@ -137,15 +137,45 @@
 .comment-form {
   border: none;
     background-color: #e6ebf5;
-    height: 3rem; /* Matches ProfileIcon size */
-    font-size: 1rem; /* Adjust text size to fit */
+    height: 3rem; 
+    font-size: 1rem; 
     padding-left: 1rem;
     font-family: 'Trebuchet MS', sans-serif;
-    font-size: 1.1rem; /* Slightly larger text */
+    font-size: 1.1rem; 
     font-weight: bold;
-    border-top-right-radius: 0; /* No rounding on right side */
+    border-top-right-radius: 0; 
   border-bottom-right-radius: 0;
 }
+.comment-form-edit {
+  border: none;
+    background-color: #e6ebf5;
+    height: 3rem; 
+    font-size: 1rem; 
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 1.1rem; 
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    width: 40rem;
+    margin-right: 0.2em;
+    
+}
+
+.post-form-edit {
+  border: none;
+    background-color: #e6ebf5;
+    height: 3rem; 
+    font-size: 1rem; 
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 1.1rem; 
+    font-weight: bold;
+    padding: 1;
+    margin: 0;
+    width: 59.9rem;
+    margin-right: 0.2em;
+    
+}
+
 
 .send-button-style {
   height: 30px;
@@ -156,6 +186,34 @@
   text-decoration: none;
   cursor: default;
 }
+
+
+.post-content-comment {
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 1.1rem; 
+  font-weight: bold; 
+  color: #343468ef;
+  padding: 0;
+  margin: 0;
+  margin-left: 0.7em;
+  column-width: auto;
+
+}
+
+.comment-width {
+  max-width: 70cap;
+}
+
+.edit-icons {
+  height: 20px;
+
+}
+
+.bottommargin {
+  margin-bottom: 1rem;
+  margin-left: 0.1em;
+}
+
 
 
 

@@ -1,13 +1,11 @@
 .profile-form {
     border: none;
     background-color: #e6ebf5;
-    height: 3rem; /* Matches ProfileIcon size */
-  /* Adjust text size to fit */
+    height: 3rem; 
     padding-left: 1rem;
     font-family: 'Trebuchet MS', sans-serif;
-    font-size: 1rem; /* Slightly larger text */
+    font-size: 1rem; 
     font-weight: bold;
-      /* Optional: Add padding for better aesthetics */
   }
 
   .post-separator {
@@ -17,18 +15,16 @@
   }
 
   .profile-name {
-     /* Matches ProfileIcon size */
-    font-size: 1rem; /* Adjust text size to fit */
+    font-size: 1rem; 
     font-family: 'Trebuchet MS', sans-serif;
-    font-size: 1.3rem; /* Slightly larger text */
+    font-size: 1.3rem; 
     font-weight: bold;
   }
   .profile-name-title {
-    /* Matches ProfileIcon size */
-   font-size: 1rem; /* Adjust text size to fit */
+   font-size: 1rem; 
    font-family: 'Trebuchet MS', sans-serif;
    font-size: 1.7rem; 
-   padding-left: 0.5em;/* Slightly larger text */
+   padding-left: 0.5em;
    font-weight: bold;
    margin: 1em;
    

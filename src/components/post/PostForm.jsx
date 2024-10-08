@@ -23,7 +23,7 @@ export function PostForm() {
         if (signedInUser) {
           setFormData((prev) => ({
             ...prev,
-            contactId: signedInUser.id, // Set the signedInUser in formData
+            contactId: signedInUser.id, 
           }));
         }
       }, [signedInUser]);

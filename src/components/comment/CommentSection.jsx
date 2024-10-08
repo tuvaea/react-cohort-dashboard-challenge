@@ -13,7 +13,6 @@ export function CommentSection({post}) {
           `https://boolean-uk-api-server.fly.dev/tuvaea/post/${post.id}/comment`
         );
         const data = await response.json();
-        //console.log(data);
         setComments(data);
       }
     
@@ -31,7 +30,7 @@ export function CommentSection({post}) {
         <Container className="p-0 m-0">
             
             <Row className="p-0 m-0">
-              <CommentsList comments={commentsToDisplay} />
+              <CommentsList comments={commentsToDisplay} fetchComments={fetchComments}/>
             </Row>
             {comments.length > 3 && (
               <Row className="p-0 m-0">

@@ -18,8 +18,6 @@ export function Header() {
               <Navbar.Brand>
                 <img src={Logo} alt="Logo" className="logo-style" /> 
               </Navbar.Brand>
-
-              {/* Profile icon */}
               <ProfileIcon contactId={signedInUser.id}/>
             </Container>
           </Navbar>

@@ -23,7 +23,6 @@ function App() {
       `https://boolean-uk-api-server.fly.dev/tuvaea/post`
     );
     const data = await response.json();
-    //console.log(data);
     setPosts(data.reverse());
   }
 
@@ -36,7 +35,6 @@ function App() {
       `https://boolean-uk-api-server.fly.dev/tuvaea/contact`
     );
     const data = await response.json();
-    //console.log(data);
     setContacts(data);
   }
 
@@ -47,7 +45,7 @@ function App() {
 
   useEffect(() => {
     if (contacts.length > 0) {
-      setSignedInUser(contacts[2]);
+      setSignedInUser(contacts[0]);
     }
   }, [contacts]); 
  
